@@ -8,6 +8,8 @@
     --primary-color: #f5af00;   
     --second-color: #333333;
     --white-color: #fafafa;
+    --title-color: #222222;
+    --paragraph-color: #999999;
 
     font-size: 62.5%;
 }
@@ -34,6 +36,7 @@ header {
 }
 */
 
+/* HEADER MENU */
 
 header {
     display: flex;
@@ -105,6 +108,8 @@ header .menu ul a{
     align-items: center;
 }
 
+/* HOME BANNER */
+
 .home .container .banner{
     display: flex;
     flex-direction: column;
@@ -150,6 +155,65 @@ header .menu ul a{
 /* SERVICES */
 
 .services {
-    background-color: #f5af00;
+    background-color: var(--white-color);
+    height: 50rem;
+    margin-bottom: 8rem;
+}
+
+.heading-section {
+    padding: 10rem;
+    text-align: center;
+}
+
+.heading-section .titles {
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 5rem;
+    margin-bottom: 2.7rem;
+    color: var(--title-color);
+    text-transform: capitalize;
+}
+
+.heading-section .paragraph {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    line-height: 2.4rem;
+}
+
+/* SERVICES CARDS */
+
+.services .wrapper-cards {
+    display: flex;
+    
+    text-align: center;
+    justify-content: space-between;
+    gap: 10rem;
+    width: 1000px;
+}
+
+.services .wrapper-cards .card-service h4{
+        color: var(--second-color);
+        font-weight: 400;
+        font-size: 1.8rem;
+        margin-bottom: 1.3rem;
+}
+
+.services .wrapper-cards .card-service p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: #999999;
+    width: 20rem;
+}
+
+.services .wrapper-cards .card-service .icon {
+    margin-bottom: 20px;
+}
+
+/* WORK */
+
+.work {
+    background-color: #eeeeee;
     height: 100vh;
 }
