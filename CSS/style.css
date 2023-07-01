@@ -14,6 +14,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
 .container {
@@ -22,14 +23,47 @@ body {
 }
 
 /* HEADER */
+/*
 header {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 10rem;
-    background-color: rgba(51, 51, 51, 0.5);
-    z-index: 1;
+    background-color: transparent;
+
 }
+*/
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+header.headerScroll {
+    background-color: var(--white-color);
+    height: 8rem;
+    transition: .4s;
+}
+
+header.headerScroll .menu ul a {
+    color: var(--second-color);
+}
+
+header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50rem;
+}
+
 
 header .menu ul {
     display: flex;
@@ -46,6 +80,10 @@ header .menu ul a{
     line-height: 10rem;
     letter-spacing: 0.04;
     padding: 1rem;
+}
+
+.hide {
+    display: none;
 }
 
 /* HOME */
@@ -105,7 +143,13 @@ header .menu ul a{
 .home .container .banner .btn:hover{
     background-color: var(--second-color);
     color: var(--white-color);
+    transition: .4s;
 }
 
 
+/* SERVICES */
 
+.services {
+    background-color: #f5af00;
+    height: 100vh;
+}
