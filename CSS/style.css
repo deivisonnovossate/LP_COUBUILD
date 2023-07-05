@@ -36,6 +36,10 @@ header {
 }
 */
 
+body {
+    background-color: var(--white-color);
+}
+
 /* HEADER MENU */
 
 header {
@@ -155,7 +159,7 @@ header .menu ul a{
 /* SERVICES */
 
 .services {
-    background-color: var(--white-color);
+ 
     height: 50rem;
     margin-bottom: 8rem;
 }
@@ -187,7 +191,7 @@ header .menu ul a{
     display: flex;
     
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 10rem;
     width: 1000px;
 }
@@ -215,5 +219,118 @@ header .menu ul a{
 
 .work {
     background-color: #eeeeee;
-    height: 100vh;
+    height: 950px;
+}
+
+.work .gallery-work {
+    display: box;
+    flex-wrap: wrap;
+    gap: 20px;
+
+
+}
+
+.work .gallery-work img {
+    width: 320px;
+    padding: 16px;
+}
+
+
+/* SKILLS */
+.skills .container {
+    height: 40rem;
+    display: flex;
+    padding: 100px 0;
+
+}
+
+.skills .container .divOne{
+    width: 50%;
+
+}
+
+.skills .container .divOne h2{
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 5rem;
+    margin-bottom: 2.7rem;
+    color: var(--title-color);
+    text-transform: capitalize;
+}
+
+
+.skills .container .divOne p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--paragraph-color);
+    line-height: 2.4rem;
+}
+
+.skills .container .divTwo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skills .divTwo .progress-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+
+}
+.skills  .divTwo .progress{
+    width: 400px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+.skills  .divTwo .progress div{
+    height: 100%;
+    width: 335px;
+    background-color: #f5af00;
+    border-radius: 5px;
+}
+
+
+/* CTA */
+
+.cta {
+    background-color: var(--primary-color);
+    padding: 6rem;
+}
+
+.cta .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta .container h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.cta .container .btn-cta {
+    border: 1px solid white;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    padding: 1.6rem 3rem;
+    border-radius: 8rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.cta .container .btn-cta:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    transition: .4s;
 }
