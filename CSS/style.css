@@ -389,6 +389,7 @@ header .menu ul a{
     gap: 4rem;
     justify-content: space-around;
     margin: 4rem 0;
+    margin-bottom: 6rem;
 }
 
 .map .contact .contact-flex {

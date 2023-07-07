@@ -23,11 +23,3 @@ const scrollLogoDown = window.addEventListener('scroll', () => {
     
 })
 
-const scrollLogoTop = window.addEventListener('scrollToo', () => {
-    let logoDark = document.querySelector('.logo-dark')
-    let logoLight = document.querySelector('.logo-light')
-
-    logoDark.classList.add('hide', window.scrollY > 2)
-    logoLight.classList.remove('hide', window.scrollY > 2)
-})
-
